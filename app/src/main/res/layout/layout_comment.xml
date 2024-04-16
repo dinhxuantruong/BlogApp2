@@ -1,0 +1,52 @@
+<!-- item_comment.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/userAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/iconuser"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/userAvatar"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_toEndOf="@id/userAvatar"
+        android:text="CommentCommentCommentCommentCommentCommentCommentCommentCommentCommentCommentComment"
+        android:textSize="14sp"
+        android:maxLength="100"
+        android:paddingTop="4dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/commentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentText"
+        android:layout_toEndOf="@id/userAvatar"
+        android:text="Time"
+        android:textSize="12sp"
+        android:paddingTop="4dp"
+        android:layout_marginTop="4dp"/>
+
+</RelativeLayout>

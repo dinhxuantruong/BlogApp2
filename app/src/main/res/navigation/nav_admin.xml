@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_admin"
+    app:startDestination="@id/addBlogFragment">
+
+    <fragment
+        android:id="@+id/addBlogFragment"
+        android:name="com.example.blogapp.view.admin.AddBlogFragment"
+        android:label="fragment_add_blog"
+        tools:layout="@layout/fragment_add_blog" />
+    <fragment
+        android:id="@+id/changeFragment"
+        android:name="com.example.blogapp.view.admin.ChangeFragment"
+        android:label="fragment_change"
+        tools:layout="@layout/fragment_change" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.blogapp.view.admin.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+</navigation>
